@@ -1,0 +1,107 @@
+.wrapper{
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 192px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  user-select: none;
+  &::before{
+    content: "";
+    width: 100%;
+    height: calc(100% - 34px);
+    background-color: var( --colors-bg-dark);
+    position: absolute;
+    border: .7px solid transparent;
+    outline: 1px solid transparent;
+    border-radius: calc(var(--radius) * 2);
+    top: 34px;
+    left: 0;
+    z-index: -1;
+    box-shadow: 0px 0px 0px transparent;
+    transition: all 200ms ease;
+  }
+  &:active{
+    &::before{
+      outline: 1.3px solid var(--colors-ui-accent);
+      border: .7px solid var(--colors-ui-accent);
+      box-shadow: 0px 8px 24px rgba(var(--colors-ui-accent-rgb), 0.06);
+    }
+    .image::before{
+      opacity: 0.4;
+    }
+  } 
+  &:hover{
+    z-index: 2;
+    &:not(:active)::before{
+      border: .7px solid var(--colors-ui-accent);
+    }
+    &:not(:active) .image::before{
+      opacity: 1;
+    }
+    .svg{
+      opacity: 1;
+      transform: translate(-50%, -50%) rotate(0);
+    }
+  }
+}
+.image{
+  width: 132px;
+  height: 132px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 50%;
+
+  &::before{
+    content: '';
+    background-color: rgba(var(--colors-ui-accent-rgb), 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    opacity: 0;
+    transition: opacity 240ms ease;
+  }
+  & img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+}
+.svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(15deg);
+  z-index: 5;
+  stroke: var(--colors-text-white);
+  opacity: 0;
+  transition: all 240ms ease;
+}
+.title{
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-rg);
+  line-height: 130%;
+  text-align: center;
+  color: var(--colors-text-white);
+  margin-bottom: 8px;
+}
+.params{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4px;
+  font-weight: var(--fw-regular);
+  line-height: 140%;
+}
+.count{
+  color: #ABBBC2;
+}

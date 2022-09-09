@@ -1,0 +1,17 @@
+.item {
+  min-width: 37px;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-rg);
+  line-height: 140%;
+  color: var(--colors-text-white);
+  padding-bottom: 13px;
+  cursor: pointer;
+  margin-bottom: 1.5px;
+  transition: color 240ms ease;
+  &:hover{
+    color: var(--colors-ui-accent);
+  }
+  &.active {
+    color: var(--colors-ui-accent);
+  }
+}

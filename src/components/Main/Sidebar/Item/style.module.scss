@@ -1,0 +1,64 @@
+.wrapper {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  padding: 13px 24px 11px 12px;
+  background-color: transparent;
+  border-radius: 12px 0 0 12px;
+  position: relative;
+  transition: background-color 240ms ease;
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url(../../../../../public/assets/icons/rectangle.svg);
+    top: -12px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 240ms ease;
+  }
+
+  &::before {
+    top: auto;
+    bottom: -12px;
+    transform: rotate(-90deg)
+  }
+
+  &.active {
+    background-color: var(--colors-bg-base);
+    &::after,
+    &::before {
+      opacity: 1;
+    }
+
+    & .content{
+      background-color: var(--colors-ui-accent);
+      color: var(--colors-text-white);
+      box-shadow: 0px 8px 24px rgba(var(--colors-ui-accent-rgb), 0.32);
+      fill: var(--colors-text-white);
+    }
+  }
+  
+}
+
+.content {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--colors-ui-accent);
+  fill: var(--colors-ui-accent);
+  stroke: var(--colors-ui-accent);
+  border-radius: var(--radius);
+  transition: all 240ms ease;
+  cursor: pointer;
+
+  &:hover{
+    background-color: var(--colors-ui-accent);
+    color: var(--colors-text-white);
+    fill: var(--colors-text-white);
+  }
+}

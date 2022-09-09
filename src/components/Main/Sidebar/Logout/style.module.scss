@@ -1,0 +1,23 @@
+.wrapper{
+  padding: 13px 24px 11px 12px;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.content{
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  fill: var(--colors-ui-accent);
+
+  &:hover{
+    fill: var(--colors-text-white);
+  }
+}
+.logout{
+
+}

@@ -1,0 +1,24 @@
+.wrapper{
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+.image{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.title{
+  font-weight: var(--fw-medium);
+  font-size: var( --fs-rg);
+  line-height: 130%;
+  color: #E0E6E9;
+  margin-bottom: 4px;
+}
+.count{
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-sm);
+  line-height: 140%;
+  color: #ABBBC2;
+}

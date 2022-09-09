@@ -1,0 +1,22 @@
+.label{
+  display: inline-block;
+  padding: 7px 12px;
+  background-color: var(--colors-bg-dark);
+  border: 1px solid #393C49;
+  color: var(--colors-ui-accent);
+  border-radius: var(--radius);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-rg);
+  line-height: 140%;
+  cursor: pointer;
+  transition: all 240ms ease;
+  user-select: none;
+}
+.input{
+  display: none;
+  &:checked + label{
+    background-color: var(--colors-ui-accent);
+    border: 1px solid transparent;
+    color: var(--colors-text-white);
+  }
+}
