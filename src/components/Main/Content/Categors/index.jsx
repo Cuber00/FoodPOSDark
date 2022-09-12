@@ -1,32 +1,40 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchCategor } from '../../../../redux/slice/categorSl';
 import TabsCategor from '../../../UI/Tabs/TabsCategor';
 import style from './style.module.scss';
-const Categors = () => {
-  const [activeCategory, setActiveCategory] = useState(1);
-  const [lineLeft, setLineLeft] = useState(-1.5);
-  const data = [
-    { id: 1, title: 'Hot Dishes' },
-    { id: 2, title: 'Cold Dishes' },
-    { id: 3, title: 'Soup' },
-    { id: 4, title: 'Grill' },
-    { id: 5, title: 'Appetizer' },
-    { id: 6, title: 'Dessert' },
-  ];
+import { SERVER_RESPONSE } from '../../../../redux/constants/apiServices';
+import { setActiveCategory } from '../../../../redux/slice/dishesSl';
 
-  return (
-    <div className={style.wrapper}>
-      {data.map((i) => (
-        <TabsCategor
-          key={i.id}
-          active={activeCategory === i.id ? true : false}
-          checkItem={() => setActiveCategory(i.id)}
-          setLineLeft={setLineLeft}>
-          {i.title}
-        </TabsCategor>
-      ))}
-      <div className={style.line} style={{ left: `${lineLeft}px` }}></div>
-    </div>
-  );
+const Categors = () => {
+  const { status, error, list } = useSelector((state) => state.categorSl);
+  const activeCategor = useSelector((state) => state.dishesSl.activeCategory);
+  const dispatch = useDispatch();
+  const [lineLeft, setLineLeft] = useState(-1.5);
+
+  useEffect(() => {
+    dispatch(fetchCategor());
+  }, []);
+
+  const handleSetActiveCategory = (id) => {
+    dispatch(setActiveCategory(id));
+  };
+
+  if (status === SERVER_RESPONSE.fulfilled)
+    return (
+      <div className={style.wrapper}>
+        {list.map((i) => (
+          <TabsCategor
+            key={i.id}
+            active={activeCategor === i.id ? true : false}
+            checkItem={() => handleSetActiveCategory(i.id)}
+            setLineLeft={setLineLeft}>
+            {i.caption}
+          </TabsCategor>
+        ))}
+        <div className={style.line} style={{ left: `${lineLeft}px` }}></div>
+      </div>
+    );
 };
 
 export default Categors;

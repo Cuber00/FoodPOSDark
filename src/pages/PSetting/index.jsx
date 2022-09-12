@@ -1,7 +1,7 @@
 import React from 'react';
 
-const PSetting = () => {
+const PSetting2 = () => {
   return <div>PSetting</div>;
 };
 
-export default PSetting;
+export default PSetting2;

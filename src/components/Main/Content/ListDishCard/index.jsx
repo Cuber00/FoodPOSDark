@@ -6,17 +6,21 @@ import Skeleton from '../../../UI/Cards/DishCard/Skeleton';
 import style from './style.module.scss';
 
 import { ReactComponent as IError } from '../../../../assets/icons/Error.svg';
+import { SERVER_RESPONSE } from '../../../../redux/constants/apiServices';
 const ListDishCard = () => {
+  let { dishesList, error, status, activeCategory, activeDeliveryType, searchQuery } = useSelector(
+    (state) => state.dishesSl,
+  );
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchDishes());
-  }, []);
-
-  let { list, error, status } = useSelector((state) => state.dishesSl);
+    dispatch(
+      fetchDishes({ categorId: activeCategory, dineIn_like: activeDeliveryType, q: searchQuery }),
+    );
+  }, [activeCategory, activeDeliveryType, searchQuery]);
 
   switch (status) {
-    case 'penging':
+    case SERVER_RESPONSE.pending:
       return (
         <div className={style.items}>
           {Array.apply(null, { length: 10 }).map((_, index) => (
@@ -24,15 +28,17 @@ const ListDishCard = () => {
           ))}
         </div>
       );
-    case 'fulfilled':
+    case SERVER_RESPONSE.fulfilled:
       return (
         <div className={style.items}>
-          {list.map((i) => (
-            <DishCard {...i} key={i.id} />
-          ))}
+          {dishesList.length > 0 ? (
+            dishesList.map((i) => <DishCard {...i} key={i.id} />)
+          ) : (
+            <>В данной категории остутвуют блюда</>
+          )}
         </div>
       );
-    case 'rejected':
+    case SERVER_RESPONSE.rejected:
       return (
         <div className={style.items}>
           <div className={style.error}>
@@ -42,8 +48,7 @@ const ListDishCard = () => {
         </div>
       );
     default:
-      return <div className={style.items}>Ошибка ERROR</div>;
-      break;
+      return <div className={style.items}>Error </div>;
   }
 };
 
