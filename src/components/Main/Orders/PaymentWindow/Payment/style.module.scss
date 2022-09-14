@@ -1,0 +1,32 @@
+.title{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  margin-bottom: 8px;
+}
+.desc{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ABBBC2;
+}
+.content{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.titleForm{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+}
+.controls{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  button{
+    width: 50%;
+  }
+}

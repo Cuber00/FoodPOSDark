@@ -2,6 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-content: baseline;
+  max-height: 686px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar { width: 0; }
 }
 .error{
   display: flex;

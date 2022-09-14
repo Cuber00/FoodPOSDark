@@ -1,0 +1,40 @@
+.wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+.content{
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: var(--colors-bg-dark);
+  color: var(--colors-text-white);
+  border-radius: calc(var(--radius)*2) 0 0 calc(var(--radius)*2);
+  height: 100vh;
+  max-width: 814px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+}
+.col{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 64px 24px 24px;
+  &:first-child{
+    padding-bottom: 53px;
+  }
+}
+.dividerH{
+  position: relative;
+  top: -64px;
+  height: 100vh;
+  width: 1px;
+  background-color: #393C49;
+}
+

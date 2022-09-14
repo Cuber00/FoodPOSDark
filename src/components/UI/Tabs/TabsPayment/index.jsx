@@ -3,8 +3,7 @@ import style from './style.module.scss';
 import { ReactComponent as Card } from '../../../../assets/icons/Card.svg';
 import { ReactComponent as Paypal } from '../../../../assets/icons/Paypal.svg';
 import { ReactComponent as Wallet } from '../../../../assets/icons/Wallet.svg';
-const TabsPayment = () => {
-  const [tabs, setTabs] = useState(1);
+const TabsPayment = ({ tabs, setTabs }) => {
   const arr = [
     { id: 1, title: 'Credit Card', icon: <Card fill="inherit" stroke="none" /> },
     { id: 2, title: 'Paypal', icon: <Paypal stroke="inherit" fill="none" /> },

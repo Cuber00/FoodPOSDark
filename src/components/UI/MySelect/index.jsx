@@ -5,7 +5,7 @@ import { ReactComponent as Arrow } from '../../../assets/icons/Arrow-ios-down.sv
 import { useDispatch, useSelector } from 'react-redux';
 import { setActiveDeliveryType } from '../../../redux/slice/dishesSl';
 
-const MySelect = () => {
+const MySelect = ({ styles }) => {
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
 
@@ -22,7 +22,7 @@ const MySelect = () => {
   };
 
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} style={styles}>
       <div className={classHeader} onClick={() => setOpen(true)}>
         <Arrow width="20" height="20" className={style.icon} />
         <span className={style.current} value={optionsArray[activeDeliveryType - 1].id}>

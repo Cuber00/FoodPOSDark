@@ -34,7 +34,7 @@ export const dishesSl = createSlice({
     error: null,
     activeCategory: 1,
     activeDeliveryType: 1,
-    searchQuery: null,
+    searchQuery: '',
   },
   reducers: {
     setActiveCategory: (state, action) => {
@@ -44,7 +44,6 @@ export const dishesSl = createSlice({
       state.activeDeliveryType = action.payload;
     },
     setSearchQuery: (state, action) => {
-      console.log(action);
       state.searchQuery = action.payload;
     },
   },

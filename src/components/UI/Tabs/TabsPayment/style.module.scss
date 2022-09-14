@@ -35,5 +35,16 @@
     stroke: var(--colors-text-white);
     border: 1px solid #ABBBC2;
     background-color: var(--colors-bg-base);
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--colors-ui-accent);
+    }
   }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import style from './style.module.scss';
 
@@ -8,14 +8,13 @@ const MyInput = ({
   isShowIconSearch,
   styles = '',
   onChanges,
+  value = '',
 }) => {
-  const query = useSelector((state) => state.dishesSl.searchQuery);
-  const [value, setValue] = React.useState('');
   const inputId = React.useId();
   const handleValue = (e) => {
-    setValue(e);
     onChanges(e);
   };
+
   let classInput = '';
   if (isShowIconSearch) {
     classInput = style.search;
