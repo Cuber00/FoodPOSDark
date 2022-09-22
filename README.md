@@ -27,6 +27,7 @@ ReactJS|Redux Toolkit|Firebase|JSON Server|Nivo
 
 # Выбранная архитектура приложения
 
+Ссылка на пример данного архитекрутного решения: https://gitlab.com/saurabhshah231/reactjs-myapp/-/tree/Step-6.1-auth-privateRoute/
 Ссылка на статью(https://medium.com/geekculture/react-js-architecture-features-folder-structure-design-pattern-70b7b9103f22)
 
 # Макет проекта:
