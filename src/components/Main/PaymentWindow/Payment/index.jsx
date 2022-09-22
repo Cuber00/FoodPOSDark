@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
-import Divider from '../../../../UI/Divider';
-import MyButton from '../../../../UI/MyButton';
-import TabsPayment from '../../../../UI/Tabs/TabsPayment';
-import FormCash from './FormCash';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchAddOrder } from '../../../../redux/slice/orderSl';
+import Divider from '../../../UI/Divider';
 import FormCreditCard from './FormCreditCard';
 import FormPaypal from './FormPaypal';
+import FormCash from './FormCash';
 import style from './style.module.scss';
+import MyButton from '../../../UI/MyButton';
+import TabsPayment from '../../../UI/Tabs/TabsPayment';
+
 const Payment = ({ closePaymentWindow }) => {
   const [tabs, setTabs] = useState(1);
+  const dispatch = useDispatch();
+  const order = useSelector((state) => state.orderSl.newOrder);
+  const addOrder = () => {
+    dispatch(fetchAddOrder(order));
+  };
   return (
     <>
       <div>
@@ -26,7 +34,7 @@ const Payment = ({ closePaymentWindow }) => {
         <MyButton type="outline" onClick={closePaymentWindow}>
           Cancel
         </MyButton>
-        <MyButton type="solid" isShadow={true}>
+        <MyButton type="solid" isShadow={true} onClick={addOrder}>
           Confirm Payment
         </MyButton>
       </div>

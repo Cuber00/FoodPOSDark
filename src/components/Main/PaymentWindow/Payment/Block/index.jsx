@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import MyInput from '../../../../../UI/MyInput';
+import MyInput from '../../../../UI/MyInput';
+
 import style from './style.module.scss';
 const Block = ({ title, placeholder }) => {
   const [value, setValue] = useState('');

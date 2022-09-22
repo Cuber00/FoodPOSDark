@@ -1,0 +1,20 @@
+.wrapper{
+  font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+color: #E0E6E9;
+
+
+}
+.col{
+  display: flex;
+  align-items: center;
+}
+.avatar{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  margin-right: 16px;
+}

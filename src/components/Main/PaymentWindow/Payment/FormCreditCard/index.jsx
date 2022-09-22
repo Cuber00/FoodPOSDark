@@ -1,6 +1,6 @@
 import React from 'react';
-import Divider from '../../../../../UI/Divider';
-import MySelect from '../../../../../UI/MySelect';
+import Divider from '../../../../UI/Divider';
+import MySelect from '../../../../UI/MySelect';
 import Block from '../Block';
 import style from './style.module.scss';
 const FormCreditCard = () => {

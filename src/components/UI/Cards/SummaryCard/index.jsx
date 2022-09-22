@@ -1,23 +1,26 @@
 import React from 'react';
 import style from './style.module.scss';
+
 import { ReactComponent as IArrowUp } from '../../../../assets/icons/ArrowUp.svg';
-const SummaryCard = () => {
+const SummaryCard = (props) => {
+  const { icon, growth, summaryCount, title } = props;
   return (
     <div className={style.wrapper}>
       <div className={style.header}>
         <div className={style.icon}>
-          <img src="assets/icons/Coin.svg" alt="" />
+          <img src={`assets/icons/${icon}`} alt="" />
         </div>
-        <div className={`${style.status} ${style.up}`}>
-          <div className={style.percentages}>32.40</div>
+        <div
+          className={growth >= 0 ? `${style.status} ${style.up}` : `${style.status} ${style.down}`}>
+          <div className={style.percentages}>{growth}</div>
           <div className={style.statusIcon}>
             <IArrowUp className={style.IArrow} width="14" height="14" />
           </div>
         </div>
       </div>
       <div>
-        <div className={style.summaryCount}>23,456</div>
-        <div className={style.title}>Total Revenue</div>
+        <div className={style.summaryCount}>{summaryCount}</div>
+        <div className={style.title}>{title}</div>
       </div>
     </div>
   );

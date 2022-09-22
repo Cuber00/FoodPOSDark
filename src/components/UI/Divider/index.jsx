@@ -1,7 +1,7 @@
-import React from 'react';
 import style from './style.module.scss';
-const Divider = () => {
-  return <div className={style.divider}></div>;
+
+const Divider = ({ classNames = '' }) => {
+  return <div className={style.divider + ' ' + classNames}></div>;
 };
 
 export default Divider;

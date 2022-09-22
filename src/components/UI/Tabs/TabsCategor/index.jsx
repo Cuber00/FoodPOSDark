@@ -1,15 +1,13 @@
 import React, { useRef } from 'react';
 import style from './style.module.scss';
 
-const TabsCategor = ({ children, active = false, checkItem, setLineLeft }) => {
+const TabsCategor = ({ children, active, id, chooseTabs, handleLineLeft }) => {
   const itemRef = useRef(null);
   const classItem = active ? `${style.item} ${style.active}` : style.item;
-
   const handleClickItem = () => {
-    checkItem();
-    if (itemRef.current !== null) setLineLeft(itemRef.current.offsetLeft - 1.5);
+    chooseTabs(id);
+    if (itemRef.current !== null) handleLineLeft(itemRef.current.offsetLeft - 1.5);
   };
-
   return (
     <div className={classItem} onClick={handleClickItem} ref={itemRef}>
       <span>{children}</span>

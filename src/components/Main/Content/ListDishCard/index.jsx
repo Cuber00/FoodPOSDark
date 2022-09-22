@@ -1,54 +1,42 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchDishes } from '../../../../redux/slice/dishesSl';
-import DishCard from '../../../UI/Cards/DishCard';
-import Skeleton from '../../../UI/Cards/DishCard/Skeleton';
+import { SERVER_RESPONSE } from '../../../../redux/constants/apiServices';
+import ListSkeleton from './ListSkeleton';
+import Main from './Main';
+import Error from './Error';
+import { fetchOrderId } from '../../../../redux/slice/orderSl';
 import style from './style.module.scss';
 
-import { ReactComponent as IError } from '../../../../assets/icons/Error.svg';
-import { SERVER_RESPONSE } from '../../../../redux/constants/apiServices';
 const ListDishCard = () => {
-  let { dishesList, error, status, activeCategory, activeDeliveryType, searchQuery } = useSelector(
+  const { status, activeCategory, activeDeliveryType, searchQuery, idOrder } = useSelector(
     (state) => state.dishesSl,
   );
-  const dispatch = useDispatch();
 
+  const dispatch = useDispatch();
   useEffect(() => {
     dispatch(
       fetchDishes({ categorId: activeCategory, dineIn_like: activeDeliveryType, q: searchQuery }),
     );
   }, [activeCategory, activeDeliveryType, searchQuery]);
 
+  useEffect(() => {
+    dispatch(fetchOrderId());
+  }, [idOrder]);
+
   switch (status) {
     case SERVER_RESPONSE.pending:
-      return (
-        <div className={style.items}>
-          {Array.apply(null, { length: 10 }).map((_, index) => (
-            <Skeleton key={index} />
-          ))}
-        </div>
-      );
+      return <ListSkeleton />;
     case SERVER_RESPONSE.fulfilled:
-      return (
-        <div className={style.items}>
-          {dishesList.length > 0 ? (
-            dishesList.map((i) => <DishCard {...i} key={i.id} />)
-          ) : (
-            <>В данной категории остутвуют блюда</>
-          )}
-        </div>
-      );
+      return <Main />;
     case SERVER_RESPONSE.rejected:
+      return <Error />;
+    default:
       return (
         <div className={style.items}>
-          <div className={style.error}>
-            <IError fill="inherit" />
-            {error}
-          </div>
+          The status of the request status to the server does not match the patterns
         </div>
       );
-    default:
-      return <div className={style.items}>Error </div>;
   }
 };
 

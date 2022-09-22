@@ -13,6 +13,7 @@ const TabsPayment = ({ tabs, setTabs }) => {
     <div className={style.wrapper}>
       {arr.map((item) => (
         <div
+          key={item.id}
           className={tabs === item.id ? `${style.item} ${style.active}` : style.item}
           onClick={() => setTabs(item.id)}>
           {item.icon}

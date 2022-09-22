@@ -1,0 +1,41 @@
+.wrapper{
+  padding: 31px 24px 24px;
+  background-color: var(--colors-bg-dark);
+  position: relative;
+  top: -24px; 
+  right: -24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: fit-content;
+  max-width: 384px;
+  width: 100%;
+}
+.title{
+  font-weight: 600;
+font-size: 28px;
+line-height: 140%;
+margin-bottom: 8px;
+}
+.desc{
+  font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.forgot{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+  color: #889898;
+  cursor: pointer;
+  transition: all 240ms ease;
+  &:hover{
+    color: var(--colors-text-white);
+  }
+}

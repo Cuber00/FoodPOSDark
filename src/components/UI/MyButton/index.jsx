@@ -18,4 +18,4 @@ const MyButton = ({ styles, type, isShowIcon, isShadow, children, icon = null, o
   );
 };
 
-export default MyButton;
+export default React.memo(MyButton);

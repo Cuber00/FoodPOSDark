@@ -2,24 +2,23 @@ import React from 'react';
 import style from './style.module.scss';
 import { ReactComponent as Plus } from '../../../../assets/icons/Plus.svg';
 import { useDispatch, useSelector } from 'react-redux';
-import { addOrderItem, fetchOrderId, setIsOpenWindow } from '../../../../redux/slice/orderSl';
+import { addOrderItem, setOpenWindow } from '../../../../redux/slice/orderSl';
 
-const DishCard = ({ id, image, available, price, title }) => {
+const DishCard = (props) => {
+  const { id, image, available, price, title } = props;
+  const { idOrder, isOpenWindow } = useSelector((state) => state.orderSl);
+
   const dispatch = useDispatch();
-  const isOpenWindow = useSelector((state) => state.orderSl.isOpenWindow);
+  const handleOpenWindow = () => {
+    if (!isOpenWindow) dispatch(setOpenWindow(true));
+  };
 
   const handleClickItem = () => {
-    if (!isOpenWindow) {
-      dispatch(setIsOpenWindow(true));
-      //Получаем ID для заказа и резервируем его
-      dispatch(fetchOrderId());
-    }
+    handleOpenWindow();
     dispatch(
       addOrderItem({
-        id,
-        image,
-        title,
-        price,
+        id: idOrder,
+        menu: { id, image, available, price, title },
       }),
     );
   };
