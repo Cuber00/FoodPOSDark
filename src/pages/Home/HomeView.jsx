@@ -1,7 +1,10 @@
 import React from 'react';
-
+import { Header } from 'pages/Home/components';
 const HomeView = (props) => {
-  const { title } = props;
-  return <div>{title}</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
 export default HomeView;

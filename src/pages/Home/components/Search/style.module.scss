@@ -1,0 +1,19 @@
+.wrapper{
+  position: relative;
+}
+.input{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--clr-text-ligth);
+  background-color: var(--cl-base-form-bg);
+  border: 1px solid var(--cl-base-dark-line);
+  border-radius: 8px;
+  padding: 14px 14px 14px 42px;
+}
+.label{
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  cursor: text;
+}

@@ -1,13 +1,14 @@
-import { BrowserRouter } from 'react-router-dom';
 import 'App.scss';
 import RouterConfig from 'navigation/RouterConfig';
+import { Sidebar } from 'navigation/components';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
+    <div className="wrapper">
+      <Sidebar />
+      <div className="content">
         <RouterConfig />
-      </BrowserRouter>
+      </div>
     </div>
   );
 }
