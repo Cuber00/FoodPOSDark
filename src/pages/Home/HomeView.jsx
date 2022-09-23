@@ -1,9 +1,13 @@
 import React from 'react';
-import { Header } from 'pages/Home/components';
-const HomeView = (props) => {
+import cl from './style.module.scss';
+import { Header, Dishes } from 'pages/Home/components/';
+import { Menu } from 'components';
+const HomeView = () => {
   return (
-    <div>
+    <div className={cl.root}>
       <Header />
+      <Menu />
+      <Dishes />
     </div>
   );
 };

@@ -1,8 +1,9 @@
 import React from 'react';
 import { ReactComponent as ISearch } from 'assets/icons/Search.svg';
+import PropTypes from 'prop-types';
 import cl from './style.module.scss';
-export const SearchView = () => {
-  const [value, setValue] = React.useState('');
+export const SearchView = (props) => {
+  const [value, setValue] = React.useState(props.value);
   const id = React.useId('search');
   const handleChangeInput = (e) => {
     setValue(e.target.value);
@@ -22,4 +23,7 @@ export const SearchView = () => {
       />
     </div>
   );
+};
+SearchView.propTypes = {
+  value: PropTypes.string,
 };
