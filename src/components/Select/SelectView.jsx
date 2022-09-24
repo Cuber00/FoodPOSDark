@@ -13,12 +13,14 @@ export const SelectView = (props) => {
   const [activeItem, setActiveItem] = React.useState(0);
 
   const classHeader = open ? `${cl.header} ${cl.active} ${cl.focus}` : `${cl.header}`;
+
   const acvItem = optionsArray[activeItem];
+
   const handleSetOpen = (id) => {
     setOpen(false);
     if (id !== activeItem) {
       setActiveItem(id);
-      handleSelect();
+      handleSelect(id);
     }
   };
   const handleSelectBody = () => {
@@ -38,7 +40,7 @@ export const SelectView = (props) => {
           <div ref={nodeRef} className={`${cl.body} ${cl[state]}`}>
             {optionsArray.map((item) => (
               <div className={cl.item} onClick={() => handleSetOpen(item.id)} key={item.id}>
-                {item.title}
+                {item.caption}
               </div>
             ))}
           </div>

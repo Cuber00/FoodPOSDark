@@ -7,6 +7,7 @@ export const SearchView = (props) => {
   const id = React.useId('search');
   const handleChangeInput = (e) => {
     setValue(e.target.value);
+    props.handleChange(e.target.value);
   };
   return (
     <div className={cl.wrapper}>

@@ -1,18 +1,18 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "name": "Snida Konstantin",
+      "username": "Cuber",
+      "email": "Sincere@april.biz",
+      "userPhoto": ""
+    }
+  ],
   "dishes": [
     {
       "id": 1,
       "categorId": 1,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0,  2],
       "title": "Spicy seasoned seafood noodles",
       "price": 2.29,
       "available": 15,
@@ -21,16 +21,7 @@
     {
       "id": 2,
       "categorId": 1,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 2],
       "title": "Salted Pasta with mushroom sauce",
       "price": 2.69,
       "available": 11,
@@ -39,16 +30,7 @@
     {
       "id": 3,
       "categorId": 1,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1],
       "title": "Beef dumpling in hot and sour soup",
       "price": 2.99,
       "available": 16,
@@ -57,16 +39,7 @@
     {
       "id": 4,
       "categorId": 1,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1],
       "title": "Healthy noodle with spinach leaf",
       "price": 3.29,
       "available": 22,
@@ -75,16 +48,7 @@
     {
       "id": 5,
       "categorId": 1,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [ 1, 2],
       "title": "Hot spicy fried rice with omelet",
       "price": 2.49,
       "available": 13,
@@ -93,15 +57,7 @@
     {
       "id": 6,
       "categorId": 1,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [ 1, 2],
       "title": "Spicy instant noodle with special omelette",
       "price": 3.29,
       "available": 17,
@@ -110,15 +66,7 @@
     {
       "id": 7,
       "categorId": 1,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Hot spicy fried rice with omelet",
       "price": 2.29,
       "available": 22,
@@ -127,15 +75,7 @@
     {
       "id": 8,
       "categorId": 1,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Spicy instant noodle with special omelette",
       "price": 2.29,
       "available": 13,
@@ -144,15 +84,7 @@
     {
       "id": 9,
       "categorId": 1,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Healthy noodle with spinach leaf",
       "price": 2.29,
       "available": 17,
@@ -161,16 +93,7 @@
     {
       "id": 10,
       "categorId": 2,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Bruschetta with cheese and tomatoes",
       "price": 2.29,
       "available": 17,
@@ -179,16 +102,7 @@
     {
       "id": 11,
       "categorId": 2,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 2],
       "title": "Bruschetta with roast beef",
       "price": 2.29,
       "available": 17,
@@ -197,16 +111,7 @@
     {
       "id": 12,
       "categorId": 2,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Bruschetta with tuna",
       "price": 2.29,
       "available": 17,
@@ -215,16 +120,7 @@
     {
       "id": 13,
       "categorId": 2,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Salmon tartare",
       "price": 2.29,
       "available": 17,
@@ -233,15 +129,7 @@
     {
       "id": 14,
       "categorId": 2,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Forshmak \"Masterpiece\"",
       "price": 2.29,
       "available": 17,
@@ -250,15 +138,7 @@
     {
       "id": 15,
       "categorId": 2,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Poke salmon",
       "price": 2.29,
       "available": 17,
@@ -267,15 +147,7 @@
     {
       "id": 16,
       "categorId": 2,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Poke with shrimp",
       "price": 2.29,
       "available": 17,
@@ -284,15 +156,7 @@
     {
       "id": 17,
       "categorId": 2,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Poke with an eel",
       "price": 2.29,
       "available": 17,
@@ -301,16 +165,7 @@
     {
       "id": 18,
       "categorId": 3,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Royal Ear",
       "price": 2.29,
       "available": 17,
@@ -319,16 +174,7 @@
     {
       "id": 19,
       "categorId": 3,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Chicken soup with homemade noodles",
       "price": 2.29,
       "available": 17,
@@ -337,16 +183,7 @@
     {
       "id": 20,
       "categorId": 3,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Pumpkin cream soup with shrimp",
       "price": 2.29,
       "available": 17,
@@ -355,16 +192,7 @@
     {
       "id": 21,
       "categorId": 3,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Homemade dumplings in broth",
       "price": 2.29,
       "available": 17,
@@ -373,15 +201,7 @@
     {
       "id": 22,
       "categorId": 3,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Borscht with fragrant lard",
       "price": 2.29,
       "available": 17,
@@ -390,15 +210,7 @@
     {
       "id": 23,
       "categorId": 3,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Gazpacho",
       "price": 2.29,
       "available": 17,
@@ -407,15 +219,7 @@
     {
       "id": 24,
       "categorId": 3,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Beetroot on kefir",
       "price": 2.29,
       "available": 17,
@@ -424,15 +228,7 @@
     {
       "id": 25,
       "categorId": 3,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Okroshka",
       "price": 2.29,
       "available": 17,
@@ -441,16 +237,7 @@
     {
       "id": 26,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Ribai 350 gr.",
       "price": 55.4,
       "available": 40,
@@ -459,16 +246,7 @@
     {
       "id": 27,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Ribai 350 gr.",
       "price": 45.48,
       "available": 40,
@@ -477,16 +255,7 @@
     {
       "id": 28,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Ribai 220 g",
       "price": 28.94,
       "available": 40,
@@ -495,16 +264,7 @@
     {
       "id": 29,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "New York 300 g",
       "price": 33.9,
       "available": 40,
@@ -513,16 +273,7 @@
     {
       "id": 30,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "New York 200 g",
       "price": 23.15,
       "available": 40,
@@ -531,16 +282,7 @@
     {
       "id": 31,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Chateau de Paris",
       "price": 27.95,
       "available": 40,
@@ -549,16 +291,7 @@
     {
       "id": 32,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Filet Mignon with shrimp and Blue Cheese sauce",
       "price": 27.95,
       "available": 40,
@@ -567,15 +300,7 @@
     {
       "id": 33,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Filet Mignon 220 g",
       "price": 46.3,
       "available": 40,
@@ -584,15 +309,7 @@
     {
       "id": 34,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Fillet-Chateau 220 g",
       "price": 46.3,
       "available": 40,
@@ -601,15 +318,7 @@
     {
       "id": 35,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Shortloin Steak",
       "price": 12.24,
       "available": 40,
@@ -618,15 +327,7 @@
     {
       "id": 36,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "T-bone steak",
       "price": 12.73,
       "available": 40,
@@ -635,15 +336,7 @@
     {
       "id": 37,
       "categorId": 4,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Porterhouse Steak",
       "price": 13.23,
       "available": 40,
@@ -652,16 +345,7 @@
     {
       "id": 38,
       "categorId": 5,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Fried ice cream with strawberry coolie",
       "price": 13.23,
       "available": 40,
@@ -670,16 +354,7 @@
     {
       "id": 39,
       "categorId": 5,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Esterhazy",
       "price": 13.23,
       "available": 40,
@@ -688,15 +363,7 @@
     {
       "id": 40,
       "categorId": 5,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Napoleon",
       "price": 13.23,
       "available": 40,
@@ -705,15 +372,7 @@
     {
       "id": 41,
       "categorId": 5,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Brownie",
       "price": 13.23,
       "available": 40,
@@ -722,16 +381,7 @@
     {
       "id": 42,
       "categorId": 5,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Bird's Milk",
       "price": 13.23,
       "available": 40,
@@ -740,16 +390,7 @@
     {
       "id": 43,
       "categorId": 6,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Cheese platter",
       "price": 16.99,
       "available": 40,
@@ -758,16 +399,7 @@
     {
       "id": 44,
       "categorId": 6,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Chicken wings",
       "price": 11.59,
       "available": 40,
@@ -776,16 +408,7 @@
     {
       "id": 45,
       "categorId": 6,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Chicken wings",
       "price": 16.49,
       "available": 40,
@@ -794,16 +417,7 @@
     {
       "id": 46,
       "categorId": 6,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Herring with rye croutons",
       "price": 9.89,
       "available": 40,
@@ -812,16 +426,7 @@
     {
       "id": 47,
       "categorId": 6,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Bruschetta with pastrami",
       "price": 7.59,
       "available": 40,
@@ -830,15 +435,7 @@
     {
       "id": 48,
       "categorId": 6,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Bruschetta with roast beef",
       "price": 7.59,
       "available": 40,
@@ -847,15 +444,7 @@
     {
       "id": 49,
       "categorId": 6,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Bruschetta with hummus and vegetables",
       "price": 7.59,
       "available": 40,
@@ -864,15 +453,7 @@
     {
       "id": 50,
       "categorId": 6,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Cold cuts",
       "price": 14.19,
       "available": 40,
@@ -881,15 +462,7 @@
     {
       "id": 51,
       "categorId": 6,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Hummus with rustic bread",
       "price": 5.39,
       "available": 40,
@@ -898,15 +471,7 @@
     {
       "id": 52,
       "categorId": 6,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Kalamata Olives",
       "price": 9.89,
       "available": 40,
@@ -915,22 +480,14 @@
     {
       "id": 53,
       "categorId": 6,
-      "totalOrdered": {
-        "byDays": 0,
-        "byMonth": 0,
-        "byYear": 0
-      },
-      "dineIn": [
-        1,
-        2
-      ],
+      "typeOrder": [0, 1, 2],
       "title": "Beef carpaccio",
       "price": 13.69,
       "available": 40,
       "image": "http://localhost:3000/assets/images/53.jpg"
     }
   ],
-  "categories": [
+  "categories":[
     {
       "id": 1,
       "caption": "Hot Dishes"
@@ -956,161 +513,28 @@
       "caption": "Appetizer"
     }
   ],
+  "typeOrder": [
+    {"id": 0, "caption": "Dine In"},
+    {"id": 1, "caption": "To Go"},
+    {"id": 2, "caption": "Delivery"}
+  ],
   "orders": [
     {
-      "id": 1,
-      "username": "Eren Jaegar",
-      "date": {
-        "days": 2,
-        "month": 9,
-        "year": 2022
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
-      "menu": [
-        {
-          "id": 4,
-          "image": "http://localhost:3000/assets/images/4.png",
-          "available": 22,
-          "price": 3.29,
-          "title": "Healthy noodle with spinach leaf",
-          "count": 1
-        }
-      ],
-      "totalPayment": 3.29,
-      "status": "pending"
+    "id": 1,
+    "userId": 1,
+    "typeOrderId": 1,
+    "date": {
+      "days": 2,
+      "month": 9,
+      "year": 2022
     },
-    {
-      "id": 2,
-      "username": "Eren Jaegar",
-      "date": {
-        "days": 2,
-        "month": 9,
-        "year": 2022
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
-      "menu": [
-        {
-          "id": 5,
-          "image": "http://localhost:3000/assets/images/5.png",
-          "available": 13,
-          "price": 2.49,
-          "title": "Hot spicy fried rice with omelet",
-          "count": 1
-        }
-      ],
-      "totalPayment": 2.49,
-      "status": "pending"
-    },
-    {
-      "id": 3,
-      "username": "Eren Jaegar",
-      "date": {
-        "days": 2,
-        "month": 9,
-        "year": 2022
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
-      "menu": [
-        {
-          "id": 4,
-          "image": "http://localhost:3000/assets/images/4.png",
-          "available": 22,
-          "price": 3.29,
-          "title": "Healthy noodle with spinach leaf",
-          "count": 1
-        },
-        {
-          "id": 2,
-          "image": "http://localhost:3000/assets/images/2.png",
-          "available": 11,
-          "price": 2.69,
-          "title": "Salted Pasta with mushroom sauce",
-          "count": 1
-        },
-        {
-          "id": 3,
-          "image": "http://localhost:3000/assets/images/3.png",
-          "available": 16,
-          "price": 2.99,
-          "title": "Beef dumpling in hot and sour soup",
-          "count": 1
-        }
-      ],
-      "totalPayment": "8.97",
-      "status": "pending"
-    },
-    {
-      "id": 4,
-      "username": "Eren Jaegar",
-      "date": {
-        "days": 2,
-        "month": 9,
-        "year": 2022
-      },
-      "dineIn": [
-        1,
-        2,
-        3
-      ],
-      "menu": [
-        {
-          "id": 11,
-          "image": "http://localhost:3000/assets/images/11.webp",
-          "available": 17,
-          "price": 2.29,
-          "title": "Bruschetta with roast beef",
-          "count": 3
-        },
-        {
-          "id": 12,
-          "image": "http://localhost:3000/assets/images/12.webp",
-          "available": 17,
-          "price": 2.29,
-          "title": "Bruschetta with tuna",
-          "count": 5
-        },
-        {
-          "id": 10,
-          "image": "http://localhost:3000/assets/images/10.webp",
-          "available": 17,
-          "price": 2.29,
-          "title": "Bruschetta with cheese and tomatoes",
-          "count": 1
-        },
-        {
-          "id": 39,
-          "image": "http://localhost:3000/assets/images/39.webp",
-          "available": 40,
-          "price": 13.23,
-          "title": "Esterhazy",
-          "count": 3
-        },
-        {
-          "id": 40,
-          "image": "http://localhost:3000/assets/images/40.webp",
-          "available": 40,
-          "price": 13.23,
-          "title": "Napoleon",
-          "count": 1
-        }
-      ],
-      "totalPayment": "73.53",
-      "status": "pending"
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+    "menu": [
+      {"dishesId":3, "count":1},
+      {"dishesId":4, "count":2},
+      {"dishesId":12, "count":1}
+    ],
+    "totalPayment": 3,
+    "status": "pending"
   }
+]
 }
