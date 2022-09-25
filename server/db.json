@@ -523,11 +523,6 @@
     "id": 1,
     "userId": 1,
     "typeOrderId": 1,
-    "date": {
-      "days": 2,
-      "month": 9,
-      "year": 2022
-    },
     "menu": [
       {"dishesId":3, "count":1},
       {"dishesId":4, "count":2},

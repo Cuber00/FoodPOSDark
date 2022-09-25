@@ -1,0 +1,24 @@
+.input{
+  font-family: var(--famyli);
+  padding: 13px 14px;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-rg);
+  line-height: 140%;
+  color: #E0E6E9;
+  background-color: var(--cl-base-form-bg);
+  outline: 1px solid transparent;
+  border: 1px solid var(--cl-base-dark-line);
+  border-radius: var(--radius);
+  transition: all .24s ease;
+  width: inherit;
+  &::placeholder{
+    color: var(--clr-text-gray);
+  }
+  &:hover{
+    border: 1px solid #828485;
+  }
+  &:focus{
+    border: 1px solid #ABBBC2;
+  }
+}
+

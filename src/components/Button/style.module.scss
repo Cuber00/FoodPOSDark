@@ -1,0 +1,59 @@
+.button{
+  padding: 13px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  outline: 1px solid transparent;
+  box-shadow: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+  font-family: var(--famyli);
+  font-weight: var(--fw-medium);
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.24s  ease;
+  &:hover{
+    box-shadow: 1px 2px 20px 0px rgba(var(--colors-ui-primary-rgb), 0.26);
+  }
+  &:active{
+    box-shadow: 1px 2px 20px 0px rgba(var(--colors-ui-primary-rgb), 0.60);
+  }
+}
+.solid{
+  background-color: var(--clr-primary);
+  box-shadow: 0px 8px 24px transparent;
+  color: #FAFAFA;
+  fill: var(--clr-white);
+  stroke: var(--clr-white);
+  &:hover{
+    border: 1px solid var(--clr-white);
+  }
+  &:focus{
+    border: 1px solid var(--clr-white);
+  }
+  &:active{
+    outline: 1.4px solid var(--clr-white);
+  }
+}
+.outline{
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+  fill: var(--clr-primary);
+  stroke: var(--clr-primary);
+  &:active {
+    outline: 1.4px solid var(--clr-primary)
+  }
+  &:focus{
+    border: 1px solid var(--clr-primary);
+  }
+}
+.shadow{
+  box-shadow: var(--shadow);
+  &:hover{
+    box-shadow: var(--shadow);
+  }
+}

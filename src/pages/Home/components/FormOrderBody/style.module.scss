@@ -1,0 +1,14 @@
+.body{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-grow: 1;
+  overflow-y: scroll;
+  height:0;
+  padding-top: 24px;
+  border-top: 1px solid var(--cl-base-dark-line);
+  border-bottom: 1px solid var(--cl-base-dark-line);
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none; 
+  &::-webkit-scrollbar { width: 0; }
+}

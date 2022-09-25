@@ -1,3 +1,12 @@
-.content{ display: flex;
-flex-wrap: wrap;
-gap: 24px;}
+.content{ 
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  overflow: scroll;
+  height:0;
+  align-content: baseline;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none; 
+  &::-webkit-scrollbar { width: 0; }
+}

@@ -1,5 +1,17 @@
 .root{
   display: flex;
+  height: 100%;
+}
+.content{
+  display: flex;
+  flex-grow: 1;
   flex-direction: column;
   gap: 24px;
+}
+.aside{
+  position: relative;
+  top: -24px;
+  right: -24px;
+  max-width: 409px;
+  width: 100%;
 }

@@ -8,14 +8,14 @@ import Setting from 'pages/Setting';
 
 const RouterConfig = () => {
   return (
-    <div>
+    <>
       <Routes>
         <Route path={ROOT} element={<Home />} />
         <Route path={DASHBOARD} element={<Dashboard />} />
         <Route path={SETTING} element={<Setting />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </div>
+    </>
   );
 };
 
