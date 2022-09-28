@@ -8,3 +8,7 @@ export { SelectContainer as Select } from './Select/SelectContainer';
 export { Divider } from './Divider';
 export { Button } from './Button';
 export { Input } from './Input';
+export { LoginContainer as Login } from './Login/LoginContainer';
+export { RowInput } from './RowInput';
+export { SignUpContainer as SignUp } from './SignUp/SignUpContainer';
+export { InputRadio } from './InputRadio';

@@ -1,0 +1,33 @@
+.wrapper{
+  position: relative;
+  top: -24px;
+  right: -24px;
+  height: fit-content;
+  max-width: 384px;
+  width: 100%;
+  padding-top: 64px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.primary{
+  color: var(--clr-primary);
+}
+.row{
+  display: flex;
+  gap: 8px;
+}
+.backIcon{
+  position: absolute;
+  cursor: pointer;
+  stroke: #fff;
+  top: 32px;
+  left: 22px;
+}

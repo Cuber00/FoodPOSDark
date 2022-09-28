@@ -1,0 +1,33 @@
+.root{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.input{
+  display: none;
+  &:checked+.label {
+    border: 1px solid var(--clr-text-ligth);
+    & .checkMark{
+      opacity: 1;
+    }
+  } 
+}
+.checkMark{
+  width: 12px;
+  height: 12px;
+  stroke: var(--clr-accent-green);
+  opacity: 0;
+  transition: opacity 240ms
+}
+.label{
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--cl-base-dark-line);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label{
+  cursor: pointer;
+}

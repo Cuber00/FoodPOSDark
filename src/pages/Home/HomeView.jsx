@@ -1,7 +1,7 @@
 import React from 'react';
 import cl from './style.module.scss';
 import { Header, Content, AsideNewOrder } from 'pages/Home/components/';
-import { Menu } from 'components';
+import { Login, Menu, SignUp } from 'components';
 
 const HomeView = (props) => {
   return (
@@ -12,6 +12,8 @@ const HomeView = (props) => {
         <Content />
       </div>
       {props.isOpenOrder && <AsideNewOrder />}
+      {/* <Login /> */}
+      <SignUp />
     </div>
   );
 };
