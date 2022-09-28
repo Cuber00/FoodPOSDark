@@ -9,3 +9,4 @@ export { RadioTypeOrderContainer as RadioTypeOrder } from './RadioTypeOrder/Radi
 export { FormOrder } from './FormOrder';
 export { OrderCardContainer as OrderCard } from './OrderCard/OrderCardContainer';
 export { FormOrderBodyContainer as FormOrderBody } from './FormOrderBody/FormOrderBodyContainer';
+export { TotalContainer as Total } from './Total/TotalContainer';

@@ -10,7 +10,6 @@ export const fetchDishes = createAsyncThunk(
       Object.entries(params)
         .map((i) => i.join('='))
         .join('&');
-    console.log(PARAMS);
     try {
       return await axios
         .get(DISHES + PARAMS)

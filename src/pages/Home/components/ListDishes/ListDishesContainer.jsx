@@ -22,9 +22,7 @@ export const ListDishesContainer = () => {
   }, [activeCategor, idTypeOrder, searchQuery]);
 
   const handleClickItem = ({ id, image, available, price, title }) => {
-    console.log(isOpenOrder);
     if (!isOpenOrder) {
-      //dispatch(setOpenOrder(true))
       dispatch(fetchIdNewOrder());
     }
     dispatch(addDishesOrder({ id, image, available, price, title }));
