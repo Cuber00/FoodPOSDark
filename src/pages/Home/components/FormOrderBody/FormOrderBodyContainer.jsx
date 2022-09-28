@@ -5,7 +5,6 @@ import { FormOrderBodyView } from './FormOrderBodyView';
 
 export const FormOrderBodyContainer = () => {
   const dishes = useSelector(menuOrderSl);
-  console.log(dishes);
 
   return <FormOrderBodyView dishes={dishes} />;
 };

@@ -3,7 +3,7 @@ import cl from './style.module.scss';
 import { Header, Content, AsideNewOrder } from 'pages/Home/components/';
 import { Menu } from 'components';
 
-const HomeView = () => {
+const HomeView = (props) => {
   return (
     <div className={cl.root}>
       <div className={cl.content}>
@@ -11,7 +11,7 @@ const HomeView = () => {
         <Menu />
         <Content />
       </div>
-      <AsideNewOrder />
+      {props.isOpenOrder && <AsideNewOrder />}
     </div>
   );
 };
