@@ -3,7 +3,16 @@ import cl from './style.module.scss';
 import { ReactComponent as ITrash } from 'assets/icons/Trash.svg';
 import { Button, Input } from 'components';
 export const OrderCardView = (props) => {
-  const { id, title, image, parsedPrice, totalPrice, count, handleCountDishes } = props;
+  const {
+    title,
+    image,
+    parsedPrice,
+    totalPrice,
+    count,
+    notes,
+    handleCountDishes,
+    handleNotesDishes,
+  } = props;
 
   return (
     <div className={cl.wrapper}>
@@ -23,7 +32,7 @@ export const OrderCardView = (props) => {
         <div className={cl.totalPrice}>{totalPrice}</div>
       </div>
       <div className={cl.row}>
-        <Input placeholder="Order Note..." value={''} onChanges={() => {}} />
+        <Input placeholder="Order Note..." value={notes} onChanges={handleNotesDishes} />
         <Button
           type="outline"
           onClick={() => handleCountDishes('decrement')}

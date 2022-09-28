@@ -14,6 +14,10 @@ export const orderSlice = createSlice({
     },
   },
   reducers: {
+    setNotes: (state, action) => {
+      state.newOrder.menu.filter((i) => i.dishesId === action.payload.dishesId)[0].notes =
+        action.payload.value;
+    },
     setOpenOrder: (state, action) => {
       state.newOrder.isOpenOrder = action.payload;
     },
@@ -29,6 +33,7 @@ export const orderSlice = createSlice({
           image: image,
           price: price,
           available: available,
+          notes: '',
           count: 1,
         });
       }
@@ -65,6 +70,6 @@ export const orderSlice = createSlice({
 export const menuOrderSl = (state) => state.order.newOrder.menu;
 export const isOpenOrderSl = (state) => !!state.order.newOrder.id;
 
-export const { handleCount, setOpenOrder, addDishesOrder } = orderSlice.actions;
+export const { setNotes, handleCount, setOpenOrder, addDishesOrder } = orderSlice.actions;
 
 export default orderSlice.reducer;
