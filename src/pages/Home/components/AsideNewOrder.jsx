@@ -1,13 +1,13 @@
 import React from 'react';
 import { Button, SideBlock, Title } from 'components';
 import cl from '../style.module.scss';
-import { RadioTypeOrder, FormOrder, Total } from 'pages/Home/components';
+import { RadioTypeOrder, FormOrder, Total, IdOrder } from 'pages/Home/components';
 
 export const AsideNewOrder = () => {
   return (
     <div className={cl.aside}>
       <SideBlock>
-        <Title type="h2">Orders #34562</Title>
+        <IdOrder />
         <RadioTypeOrder />
         <FormOrder />
         <Total />

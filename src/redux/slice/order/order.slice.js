@@ -69,6 +69,7 @@ export const orderSlice = createSlice({
 
 export const menuOrderSl = (state) => state.order.newOrder.menu;
 export const isOpenOrderSl = (state) => !!state.order.newOrder.id;
+export const idOrderSl = (state) => state.order.newOrder.id;
 
 export const { setNotes, handleCount, setOpenOrder, addDishesOrder } = orderSlice.actions;
 

@@ -10,3 +10,4 @@ export { FormOrder } from './FormOrder';
 export { OrderCardContainer as OrderCard } from './OrderCard/OrderCardContainer';
 export { FormOrderBodyContainer as FormOrderBody } from './FormOrderBody/FormOrderBodyContainer';
 export { TotalContainer as Total } from './Total/TotalContainer';
+export { IdOrderContainer as IdOrder } from './IdOrder/IdOrderContainer';
