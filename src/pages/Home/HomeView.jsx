@@ -11,9 +11,12 @@ const HomeView = (props) => {
         <Menu />
         <Content />
       </div>
+      {/* Вынеси модалки в отдельный компонент со своим контейнером */}
       {props.isOpenOrder && <AsideNewOrder />}
-      {/* <Login /> */}
-      <SignUp />
+      {props.isOpenLogin && <Login />}
+      {props.isOpenSignUp && <SignUp />}
+      {/* 
+      <SignUp /> */}
     </div>
   );
 };

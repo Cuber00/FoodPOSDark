@@ -1,0 +1,19 @@
+.root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+}
+.svg{
+  width: 100px;
+
+  fill: var(--clr-accent-red)
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}

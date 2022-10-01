@@ -7,6 +7,10 @@ import { ReactComponent as Message } from 'assets/icons/Message.svg';
 import { ReactComponent as Notification } from 'assets/icons/Notification.svg';
 import { ReactComponent as Setting } from 'assets/icons/Setting.svg';
 import { SidebarView } from './SidebarView';
+import { loginStatusSl, setUser, userSl } from 'redux/slice/user/user.slice';
+import { useDispatch, useSelector } from 'react-redux';
+import { FULFILLED } from 'redux/CONSTANTS';
+import { fetchIdNewOrder } from 'redux/slice/order/orderAPI';
 export const SidebarContainer = () => {
   const categor = [
     { id: 1, path: ROOT, title: 'Jaegar Resto', icon: <Home fill="inherit" stroke="none" /> },
@@ -31,5 +35,17 @@ export const SidebarContainer = () => {
     },
     { id: 6, path: SETTING, title: 'Setting', icon: <Setting fill="inherit" stroke="none" /> },
   ];
-  return <SidebarView categor={categor} />;
+  const dispatch = useDispatch();
+  const status = useSelector(loginStatusSl);
+  React.useEffect(() => {
+    if (status === FULFILLED) {
+      dispatch(fetchIdNewOrder());
+    }
+  }, [status]);
+
+  React.useEffect(() => {
+    dispatch(setUser(JSON.parse(localStorage.getItem('user'))));
+  }, []);
+  const login = useSelector(userSl);
+  return <SidebarView categor={categor} login={login} />;
 };

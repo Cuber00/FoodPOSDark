@@ -10,7 +10,7 @@ export const SidebarView = (props) => {
       {props.categor.map((i) => (
         <NavItem id={i.id} path={i.path} title={i.title} icon={i.icon} key={i.id} />
       ))}
-      <Logout />
+      {!!props.login && <Logout />}
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button, SideBlock, Title } from 'components';
-import cl from '../style.module.scss';
+import cl from './style.module.scss';
 import { RadioTypeOrder, FormOrder, Total, IdOrder } from 'pages/Home/components';
 
-export const AsideNewOrder = () => {
+export const AsideNewOrderView = (props) => {
   return (
     <div className={cl.aside}>
       <SideBlock>
@@ -11,7 +11,7 @@ export const AsideNewOrder = () => {
         <RadioTypeOrder />
         <FormOrder />
         <Total />
-        <Button type="solid" isShadow={true}>
+        <Button type="solid" isShadow={true} onClick={props.handleButton}>
           Continue to Payment
         </Button>
       </SideBlock>

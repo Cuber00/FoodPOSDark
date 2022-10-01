@@ -3,7 +3,7 @@ import cl from './style.module.scss';
 import PropTypes from 'prop-types';
 
 export const Input = (props) => {
-  const { type, placeholder, onChanges, value } = props;
+  const { type, placeholder, onChanges, value, hookform, aria_invalid } = props;
   const inputId = React.useId();
   const [valueInput, setValueInput] = React.useState(value);
   const handleValue = (newValue) => {
@@ -12,10 +12,12 @@ export const Input = (props) => {
   };
   return (
     <input
+      {...hookform}
       id={inputId}
       className={`${cl.input}`}
       type={type}
       value={valueInput}
+      aria-invalid={aria_invalid}
       onChange={(e) => handleValue(e.target.value)}
       placeholder={placeholder}
     />

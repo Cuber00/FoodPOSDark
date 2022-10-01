@@ -13,12 +13,14 @@
   gap: 12px;
 }
 .footer{
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 .primary{
   color: var(--clr-primary);
+  cursor: pointer;
 }
 .row{
   display: flex;

@@ -4,7 +4,7 @@ export { Content } from './Content';
 export { ListDishesContainer as ListDishes } from './ListDishes/ListDishesContainer';
 export { SelectTypeOrderContainer as SelectTypeOrder } from './SelectTypeOrder/SelectTypeOrderContainer';
 export { DishCard } from './DishCard/';
-export { AsideNewOrder } from './AsideNewOrder';
+export { AsideNewOrderContainer as AsideNewOrder } from './AsideNewOrder/AsideNewOrderContainer';
 export { RadioTypeOrderContainer as RadioTypeOrder } from './RadioTypeOrder/RadioTypeOrderContainer';
 export { FormOrder } from './FormOrder';
 export { OrderCardContainer as OrderCard } from './OrderCard/OrderCardContainer';

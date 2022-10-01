@@ -17,6 +17,7 @@
     "react-calendar": "^3.8.0",
     "react-content-loader": "^6.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.36.1",
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
@@ -28,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server -w server/db.json -p 3001",
+    "server": "json-server -w server/db.json -p 3001 -m ./node_modules/json-server-auth",
     "start": "concurrently \"npm run dev\" \"npm run server\""
   },
   "eslintConfig": {
@@ -51,6 +52,7 @@
   },
   "devDependencies": {
     "concurrently": "^7.3.0",
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0"
   }
 }
